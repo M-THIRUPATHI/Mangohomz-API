@@ -1,0 +1,18 @@
+
+### insert user account by post  methd
+# curl -i -X POST -H 'Accept: application/json' \
+#     -H 'Content-type: application/json' http://localhost:3000/userAccount \
+#     --data '{"first_name":"Prithvi", "last_name": "Raj", "user_name": "raj_123", "password": "guest", "email": "raj@sedots.com", "account_type": "owner"}'
+
+    ### get useraccounts
+    GET http://localhost:3000/userAccount
+
+    ### delete user accounts
+    # curl -i -X DELETE -H 'Accept: application/json' \
+    # -H 'Content-type: application/json' http://localhost:3000/userAccount/4
+    
+
+    ### update user accounts
+    # curl -i -X PUT -H 'Accept: application/json' \
+    # -H 'Content-type: application/json' http://localhost:3000/userAccount/5 \
+    # --data '{"first_name":"dart", "last_name": "com"}'
